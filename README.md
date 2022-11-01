@@ -4,6 +4,8 @@
 
 As a challenge submission to Gitcoin Open Data Science, Big Burp is a data-backed exploratory analysis into how text processing and analysis can potentially be utilized to grade grants for their eligibility.
 
+<img src="https://i.imgur.com/JlrZUC0.png" width="400"/>
+
 # Table of Contents
 
 - [Introduction](#introduction)
@@ -15,7 +17,7 @@ As a challenge submission to Gitcoin Open Data Science, Big Burp is a data-backe
 
 # Introduction
 
-As part of the Gitcoin grants review process, human incentives are very much relied on. By doing so, there exists a level of transparency, equitability, and inclusivity that an algorithm will likely fall short of. The reason being is that 
+As part of the Gitcoin grants review process, human incentives are very much relied on. By doing so, there exists a level of transparency, equitability, and inclusivity that an algorithm will likely fall short of.
 
 Big Burp takes a look at one key factor of this grants application process: the project description. This serves as the _first impression_ a reviewer has on a project. Based off the results of Gitcoin Grants Round 15, Big Burp aims to provide insight into what forms of applications, with respect to their project descriptions, are approved and denied.
 
@@ -166,7 +168,7 @@ With the points discussed and notable observations in mind, the following conclu
 
 Thus, bringing all these points together, there is an argument to be made: 
 
-**How a project description is phrased, what words are used, and how it shines a light on the project's timeliness and widespread potential holds significant weight in their project's acceptance into a given Gitcoin grants round.**
+**Applicants must pay significant attention to how they phrase their project desciription, what words they use, and how it shines a light on the project's timeliness and widespread potential. All these together, they hold significant weight in their project's acceptance into a given Gitcoin grants round.**
 
 # Contributing
 
