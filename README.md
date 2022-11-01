@@ -37,8 +37,8 @@ By measuring both its independent and relative frequency, it answers the questio
 2. After the data is subset into relevant information (i.e. title, approved, description), the project descriptions are split into individual words. Their relation to the aforementioned relevant information remains intact. Thereafter, significant efforts are made to clean the data. Steps include:
 
 - removing rows with words that are likely not part of the English dictionary,
-- removing rows with project descriptions that include numbers, and
-- removing rows with project descriptions that include special characters and URLs.
+- removing rows that include numbers, and
+- removing rows that include special characters and URLs.
 
 # Results
 
