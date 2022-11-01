@@ -10,6 +10,7 @@ As a challenge submission to Gitcoin Open Data Science, Big Burp is a data-backe
 - [Methodology](#methodology)
 - [Results](#results)
 - [Discussion](#discussion)
+- [Conclusion](#conclusion)
 - [Contributing](#contributing)
 
 # Introduction
@@ -51,19 +52,16 @@ By measuring both its independent and relative frequency, it answers the questio
 <img src="https://i.imgur.com/2rk1uwx.png" width="800"/>
 
 4. Between the approved projects, the five least relevant keywords were:
-```
-research (n = 1, tf_idf = 6.928), education (n = 1, tf_idf = 0.012), information (n = 1, tf_idf = 0.018), creating (n = 1, tf_idf = 0.027), organizations (n = 1, tf_idf = 0.027)
-```
+
+```research (n = 1, tf_idf = 0.012), education (n = 1, tf_idf = 0.012), information (n = 1, tf_idf = 0.018), creating (n = 1, tf_idf = 0.027), organizations (n = 1, tf_idf = 0.027)```
 
 5. As follows, the five most unique (i.e. distinctive) keywords were:
-```
-offends (n = 1, tf_idf = 6.928), aggressively (n = 1, tf_idf = 6.928), ported (n = 1, tf_idf = 6.523), outs (n = 1, tf_idf = 6.928), hatch (n = 1, tf_idf = 6.012)
-```
+
+```offends (n = 1, tf_idf = 6.928), aggressively (n = 1, tf_idf = 6.928), ported (n = 1, tf_idf = 6.523), outs (n = 1, tf_idf = 6.928), hatch (n = 1, tf_idf = 6.012)```
 
 6. Now, the five most relevant keywords were:
-```
-review (n = 21, tf_idf = 1.15), cognitive (n = 19, tf_idf = 2.414), research (n = 15, tf_idf = 0.164), property (n = 14, tf_idf = 1.453), action (n = 13, tf_idf = 0.589)
-```
+
+```review (n = 21, tf_idf = 1.15), cognitive (n = 19, tf_idf = 2.414), research (n = 15, tf_idf = 0.164), property (n = 14, tf_idf = 1.453), action (n = 13, tf_idf = 0.589)```
 
 7. Diving deeper into the lattermost metric, visualized below is a graph of the relevance of other words, relative to other approved project descriptions, used in the projects who have keywords ranking in the top three:
 
@@ -79,21 +77,96 @@ review (n = 21, tf_idf = 1.15), cognitive (n = 19, tf_idf = 2.414), research (n 
 
 9. Between the denied projects, the five least relevant keywords were:
 
-```research, education, crypto, information, creating```
+```research (n = 1, tf_idf = 0.012), education (n = 1, tf_idf = 0.017), crypto (n = 1, tf_idf = 0.017), information (n = 1, tf_idf = 0.021), creating (n = 1, tf_idf = 0.025)```
 
 10. As follows, the five most unique (i.e. distinctive) keywords were:
 
-```lyrics, cancelled, impersonated, fathers, direly```
+```lyrics (n = 1, tf_idf = 7.621), cancelled (n = 1, tf_idf = 7.621), impersonated (n = 1, tf_idf = 6.928), fathers (n = 1, tf_idf = 6.928), direly (n = 1, tf_idf = 6.928)```
 
 11. Now, the five most relevant keywords were:
 
-```coffee, combustion, translated, editor, converter```
+```coffee (n = 29, tf_idf = 2.607), combustion (n = 18, tf_idf = 3.884), translated (n = 18, tf_idf = 3.116), editor (n = 15, tf_idf = 2.261), converter (n = 14, tf_idf = 3.884)```
 
 12. Diving deeper into the lattermost metric, visualized below is a graph of the relevance of other words, relative to other approved project descriptions, used in the projects who have keywords ranking in the top three:
 
 <img src="https://i.imgur.com/Mqfy9xY.png" width="800"/>
 <img src="https://i.imgur.com/OwM5WUv.png" width="800"/>
 <img src="https://i.imgur.com/U56QNTN.png" width="800"/>
+
+# Discussion
+
+With respect to the entire data set, each word's TF-IDF can be modeled as a distribution. What this allows us to conclude is the assumption of the application of [Zipf's Law](https://en.wikipedia.org/wiki/Zipf%27s_law). Zipf, an American linguist, stated that the frequency that a word appears is inversely proportional to its rank.
+
+In the calculations performed above, `n` represents the significant frequency a word has. `tf_idf` is its combined independent and relative score. Mathematically, this can be calcuated as:
+
+<img src="https://monkeylearn.com/static/e791e1f0a45f11873c2a849987c38252/64bef/1.webp" width="800"/>
+<img src="https://monkeylearn.com/static/ef94a0124c99f471176df096a9ea692a/64bef/2.webp" width="800"/>
+<img src="https://monkeylearn.com/static/b233220f6fc177312a39e57ede405f3f/905c1/3.webp" width="800"/>
+
+<sub>Retrieved from: [MonkeyLearn](https://monkeylearn.com/)</sub>
+
+Now, the results visualized above show notable observations that can be made from the data, specifically:
+
+- finding the top used keywords in project descriptions represent common use cases, purposes, and ideas that applicants pitch to Gitcoin,
+- finding the top used keywords in **approved** project descripions may open discussions on preferred current and predicted industry trends, as well as 
+- finding the top used keywords in **denied** project descriptions may offer insight into lesser preferred 
+
+As for the focus of the exploratory analysis, the `tf_idf`, broken into three parts:
+
+1. least relevant keywords ```(n = 1, tf_idf = 0.0xy)```
+
+- there exist common least relevant keywords between approved and denied projects
+- the `tf_idf` is inconsequential, relative to the entire scale
+
+2. most unique keywords ```(n = 1, tf_idf > 6.xyz)```
+
+- the `tf_idf` of these words are among the highest in the entire data set
+
+3. most relevant keywords ```(n > 10, tf_idf > 0.1)```
+
+- the `n` of these words are among the highest in the entire data set
+
+Now, notice that the most relevant keywords category, with respect to its `tf_idf` scale, somewhat exists in between the least relevant keywords category and the most unique keywords category.
+
+# Conclusion
+
+With the points discussed and notable observations in mind, the following conclusions can be made:
+
+1. Projects within the sphere of education seem to be common between approved and denied projects.
+
+- a reason for this might be that education continues to play a large role in the growing adoption of the blockchain in the real-world, and
+- there is no shortage of initiatives in the space that continue to inform and develop different aspects of Web 3 knowledge.
+
+2. There seems to be a focus in social, connections, credibility, and work in approved projects.
+
+- a reason for this might be the increasingly popular take that wallets are immutable Web 3 identities,
+- as it becomes prevalent that the blockchain proves advantageous in the real-world through its ability to instantaneously and permanently retain a traceable record of events, social platforms such as Lens Protocol, DeSo, and Mirror continue to grow rapidly in its user base,
+- in fact, Jack Dorsey (co-founder of Twitter) is building Bluesky, a social internet built on the blockchain with these identities. 
+
+3. Denied projects seem to be broader in nature, containing keywords such as crypto and application. Additionally, there exists some concentration in the keywords creators and minted.
+
+- a reason for this might be the timing of the grants round, where during this period, NFTs were at its bear,
+- as the keywords creators and minted likely relate to NFTs, little interest was paid attention as their long-term feasibility, legitimacy, and adoption were questioned, and
+- as for the keywords crypto and application, broader projects might just fail to fill a current need in the space.
+
+4. Approved and denied projects share some common least relevant keywords.
+
+- as mentioned in the first point, these might refer to the more prevalent themes that individuals in the space identify as a problem needing a solution.
+
+5. Notably, the most relevant keywords show some form of relation between their definition and whether or not their project is accepted or denied.
+
+- arguably, it could be said that these keywords hold the heaviest weight in swaying their project application's decision,
+- keywords such as cognitive, research, and property are buzzwords that easily attract attention given their timely relation to both the space and industry, and
+- keywords such as coffee, combustion, and translated likely hold little relevance and relation to either the space and industry.
+
+6. As visualized by the graphs in orange, a pattern is revealed with the way project descriptions are phrased and how words are used, relative to their project acceptance.
+
+- with accepted projects, a healthy and varying distribution of a selection of relevant words is seen, and
+- with denied projects, an over-congestion of somewhat off-topic words is seen.
+
+Thus, bringing all these points together, there is an argument to be made: 
+
+**How a project description is phrased, what words are used, and how it shines a light on the project's timeliness and widespread potential holds significant weight in their project's acceptance into a given Gitcoin grants round.**
 
 # Contributing
 
