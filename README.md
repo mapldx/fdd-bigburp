@@ -21,7 +21,7 @@ As part of the Gitcoin grants review process, human incentives are very much rel
 
 Big Burp takes a look at one key factor of this grants application process: the project description. This serves as the _first impression_ a reviewer has on a project. Based off the results of Gitcoin Grants Round 15, Big Burp aims to provide insight into what forms of applications, with respect to their project descriptions, are approved and denied.
 
-**How can text processing and analysis be potentially utilized to grade grants for their eligibility?**
+**How can text processing and keyword analysis be potentially utilized to grade grants for their eligibility?**
 
 # Methodology
 
@@ -166,9 +166,12 @@ With the points discussed and notable observations in mind, the following conclu
 - with accepted projects, a healthy and varying distribution of a selection of relevant words is seen, and
 - with denied projects, an over-congestion of somewhat off-topic words is seen.
 
-Thus, bringing all these points together, there is an argument to be made: 
+**Thus, bringing all these points together, there are arguments to be made that:**
 
-**Applicants must pay significant attention to how they phrase their project desciription, what words they use, and how it shines a light on the project's timeliness and widespread potential. All these together, they hold significant weight in their project's acceptance into a given Gitcoin grants round.**
+- applicants must pay significant attention to how they phrase their project desciription, what words they use, and how it shines a light on the project's timeliness and widespread potential. All these together, they hold significant weight in their project's acceptance into a given Gitcoin grants round.
+- by utilizing project descriptions as an eligibility signal, Big Burp's text processing and keyword analysis can crucially better assist grant reviewers by cutting through the noise and identifying what is important, relative to other project applications.
+
+_<sub>Personal note: given time constraints, I was not able to extend the exploration to sentiment analysis. As I had hoped to do so originally, if given the opportunity, I would be very much interested in seeing what work I would produce for said aspect.</sub>_
 
 # Contributing
 
