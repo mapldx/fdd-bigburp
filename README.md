@@ -97,7 +97,7 @@ By measuring both its independent and relative frequency, it answers the questio
 
 # Discussion
 
-With respect to the entire data set, each word's TF-IDF can be modeled as a distribution. What this allows us to conclude is the assumption of the application of [Zipf's Law](https://en.wikipedia.org/wiki/Zipf%27s_law). Zipf, an American linguist, stated that the frequency that a word appears is inversely proportional to its rank.
+With respect to the entire data set, each word's TF-IDF can be modeled as a distribution. What this allows us to conclude is the assumption of the application of [Zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law). Zipf, an American linguist, stated that the frequency that a word appears is inversely proportional to its rank.
 
 In the calculations performed above, `n` represents the significant frequency a word has. `tf_idf` is its combined independent and relative score. Mathematically, this can be calcuated as:
 
@@ -171,7 +171,7 @@ With the points discussed and notable observations in mind, the following conclu
 - applicants must pay significant attention to how they phrase their project desciription, what words they use, and how it shines a light on the project's timeliness and widespread potential. All these together, they hold significant weight in their project's acceptance into a given Gitcoin grants round.
 - by utilizing project descriptions as an eligibility signal, Big Burp's text processing and keyword analysis can crucially better assist grant reviewers by cutting through the noise and identifying what is important, relative to other project applications.
 
-_<sub>Personal note: given time constraints, I was not able to extend the exploration to sentiment analysis. As I had hoped to do so originally, if given the opportunity, I would be very much interested in seeing what work I would produce for said aspect.</sub>_
+_<sub>Personal note: given time constraints, I was not able to extend the exploration to sentiment analysis and the [Flesch–Kincaid readability tests](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests). As I had hoped to do so originally, if given the opportunity, I would be very much interested in seeing what work I would produce for said aspect.</sub>_
 
 # Contributing
 
