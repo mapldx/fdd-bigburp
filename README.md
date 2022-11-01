@@ -89,7 +89,7 @@ By measuring both its independent and relative frequency, it answers the questio
 
 ```coffee (n = 29, tf_idf = 2.607), combustion (n = 18, tf_idf = 3.884), translated (n = 18, tf_idf = 3.116), editor (n = 15, tf_idf = 2.261), converter (n = 14, tf_idf = 3.884)```
 
-12. Diving deeper into the lattermost metric, visualized below is a graph of the relevance of other words, relative to other approved project descriptions, used in the projects who have keywords ranking in the top three:
+12. Diving deeper into the lattermost metric, visualized below is a graph of the relevance of other words, relative to other denied project descriptions, used in the projects who have keywords ranking in the top three:
 
 <img src="https://i.imgur.com/Mqfy9xY.png" width="800"/>
 <img src="https://i.imgur.com/OwM5WUv.png" width="800"/>
@@ -159,7 +159,7 @@ With the points discussed and notable observations in mind, the following conclu
 
 - arguably, it could be said that these keywords hold the heaviest weight in swaying their project application's decision,
 - keywords such as cognitive, research, and property are buzzwords that easily attract attention given their timely relation to both the space and industry, and
-- keywords such as coffee, combustion, and translated likely hold little relevance and relation to either the space and industry.
+- keywords such as coffee, combustion, and translated likely hold little relevance and relation to either the space or industry.
 
 6. As visualized by the graphs in orange, a pattern is revealed with the way project descriptions are phrased and how words are used, relative to their project acceptance.
 
