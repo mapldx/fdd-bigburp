@@ -19,7 +19,7 @@ library(stringr)
 # install.packages("qdapDictionaries")
 library(qdapDictionaries)
 
-apps <- fromJSON("/Users/zwcs/Desktop/grants_applications_gr15.json")
+apps <- fromJSON("grants_applications_gr15.json")
 apps <- lapply(apps, function(x) {
   x[sapply(x, is.null)] <- NA
   unlist(x)
