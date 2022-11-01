@@ -19,7 +19,7 @@ As part of the Gitcoin grants review process, human incentives are very much rel
 
 Big Burp takes a look at one key factor of this grants application process: the project description. This serves as the _first impression_ a reviewer has on a project. Based off the results of Gitcoin Grants Round 15, Big Burp aims to provide insight into what forms of applications, with respect to their project descriptions, are approved and denied.
 
-How can text processing and analysis be potentially utilized to grade grants for their eligibility?
+**How can text processing and analysis be potentially utilized to grade grants for their eligibility?**
 
 # Methodology
 
@@ -108,8 +108,8 @@ In the calculations performed above, `n` represents the significant frequency a 
 Now, the results visualized above show notable observations that can be made from the data, specifically:
 
 - finding the top used keywords in project descriptions represent common use cases, purposes, and ideas that applicants pitch to Gitcoin,
-- finding the top used keywords in **approved** project descripions may open discussions on preferred current and predicted industry trends, as well as 
-- finding the top used keywords in **denied** project descriptions may offer insight into lesser preferred 
+- finding the top used keywords in **approved** project descripions may open discussions on preferred current and predicted industry trends, and 
+- finding the top used keywords in **denied** project descriptions may offer insight into lesser preferred or relevant topics at a given period.
 
 As for the focus of the exploratory analysis, the `tf_idf`, broken into three parts:
 
