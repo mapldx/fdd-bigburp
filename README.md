@@ -171,7 +171,7 @@ With the points discussed and notable observations in mind, the following conclu
 - applicants must pay significant attention to how they phrase their project desciription, what words they use, and how it shines a light on the project's timeliness and widespread potential. All these together, they hold significant weight in their project's acceptance into a given Gitcoin grants round.
 - by utilizing project descriptions as an eligibility signal, Big Burp's text processing and keyword analysis can crucially better assist grant reviewers by cutting through the noise and identifying what is important, relative to other project applications.
 
-_<sub>Personal note: given time constraints, I was not able to extend the exploration to sentiment analysis and the [Flesch–Kincaid readability tests](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests). As I had hoped to do so originally, if given the opportunity, I would be very much interested in seeing what work I would produce for said aspect.</sub>_
+_<sub>Personal note: given time constraints, I was not able to extend the exploration to sentiment analysis and the [Flesch–Kincaid readability tests](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests). As I had hoped to do so originally, I would be very much interested in seeing what work I would produce for said aspect if given the opportunity.</sub>_
 
 # Contributing
 
